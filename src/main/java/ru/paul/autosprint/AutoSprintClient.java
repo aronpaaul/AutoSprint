@@ -18,6 +18,7 @@ public final class AutoSprintClient implements ClientModInitializer {
             return;
         }
 
-        player.setSprinting(true);
+        boolean shouldSprint = player.input != null && player.input.movementForward > 0.0F && !player.isSneaking();
+        player.setSprinting(shouldSprint);
     }
 }
