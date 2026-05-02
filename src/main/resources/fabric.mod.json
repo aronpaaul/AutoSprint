@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "autosprint",
+  "version": "${version}",
+  "name": "AutoSprint",
+  "description": "Всегда включает спринт у игрока.",
+  "authors": [
+    "paul"
+  ],
+  "contact": {
+    "sources": "https://github.com/aronpaaul/AutoSprint"
+  },
+  "license": "All Rights Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.paul.autosprint.AutoSprintClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
